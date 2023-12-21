@@ -3,7 +3,10 @@ Vulnerabilities inherent in Android phones such as the OS, other apps and wirele
 
 ## Versions
 
-Krux_24.04_BETA_8_Android_0.4
+Krux_24.04_BETA_9_Android_0.6
+- Settings bugfix. Last version settings were completely messed, sorry!
+
+Krux_24.04_BETA_9_Android_0.5
 - Faster processing for animated QR codes
 
 Krux_24.04_BETA_8_Android_0.4
