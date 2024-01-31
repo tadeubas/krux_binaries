@@ -3,6 +3,9 @@ Vulnerabilities inherent in Android phones such as the OS, other apps and wirele
 
 ## Versions
 
+Krux_24.04_BETA_15_Android_0.8
+- Entropy indicators, internal optimizations
+
 Krux_24.04_BETA_9_Android_0.6
 - Settings bugfix. Last version settings were completely messed, sorry!
 
