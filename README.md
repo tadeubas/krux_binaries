@@ -16,11 +16,6 @@ To Flash Maix Amigo run:
 ./ktool-linux -B goE -b 1500000 maixpy_amigo_tft/kboot.kfpkg
 ```
 
-If your Amigo got flipped character position on keypads and switched Yes/No questions try the IPS version:
-```
-./ktool-linux -B goE -b 1500000 maixpy_amigo_ips/kboot.kfpkg
-```
-
 To Flash M5stickV run:
 ```
 ./ktool-linux -B goE -b 1500000 maixpy_m5stickv/kboot.kfpkg
@@ -39,6 +34,11 @@ To Flash Maix Dock run:
 To Flash Yahboom Aimotion you'll have to manually specify the port, on this example `/dev/ttyUSB0`:
 ```
 ./ktool-linux -B goE -b 1500000 -p /dev/ttyUSB0 maixpy_yahboom/kboot.kfpkg
+```
+
+To Flash Maix Cube run:
+```
+./ktool-linux -B goE -b 1500000 maixpy_cube/kboot.kfpkg
 ```
 
 Obs: You might need to use "sudo" if your user don't have access to serial port
