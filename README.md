@@ -13,7 +13,7 @@ chmod +x ktool-linux
 
 To Flash Maix Amigo run:
 ```
-./ktool-linux -B goE -b 1500000 maixpy_amigo_tft/kboot.kfpkg
+./ktool-linux -B goE -b 1500000 maixpy_amigo/kboot.kfpkg
 ```
 
 To Flash M5stickV run:
@@ -47,7 +47,7 @@ Obs: You might need to use "sudo" if your user don't have access to serial port
 
 Replace './ktool-linux' for 'ktool-win.exe' and `/` for `\` in commands. Ex:
 ```
-ktool-win.exe -B goE -b 1500000 maixpy_amigo_ips\kboot.kfpkg
+ktool-win.exe -B goE -b 1500000 maixpy_amigo\kboot.kfpkg
 ```
 
 
