@@ -60,5 +60,12 @@ Obs: You might need to use "sudo" if your user don't have access to serial port
 
 Replace './ktool-linux' for 'ktool-win.exe' and `/` for `\` in commands. Ex:
 ```
-ktool-win.exe -B goE -b 1500000 maixpy_amigo\kboot.kfpkg
+ktool-win.exe -B dan -b 1500000 maixpy_tzt\kboot.kfpkg
+```
+
+# Flashing on Mac
+
+Replace './ktool-linux' for './ktool-mac'. Ex:
+```
+./ktool-mac -B dan -b 1500000 maixpy_tzt/kboot.kfpkg
 ```
