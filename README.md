@@ -3,7 +3,7 @@ Experimental compiled Krux binaries. These binaries are NOT signed and for test 
 
 For stable releases, please download from [official repository](https://github.com/selfcustody/krux/releases/latest)
 
-# Flash Instructions:
+## Flash Instructions:
 Make ktool executable:
 ```
 chmod +x ktool-linux 
@@ -56,16 +56,25 @@ To Flash Maix Dock run:
 
 Obs: You might need to use "sudo" if your user don't have access to serial port
 
-# Flashing on Windows
+## Flashing on Windows
 
 Replace './ktool-linux' for 'ktool-win.exe' and `/` for `\` in commands. Ex:
 ```
 ktool-win.exe -B dan -b 1500000 maixpy_tzt\kboot.kfpkg
 ```
 
-# Flashing on Mac
+## Flashing on Mac
 
 Replace './ktool-linux' for './ktool-mac'. Ex:
 ```
 ./ktool-mac -B dan -b 1500000 maixpy_tzt/kboot.kfpkg
 ```
+
+## Krux Apps (Kapps)
+
+Run developer-signed Krux applications (Kapps) that are not meant to be included in the main firmware. To install one, copy its `.mpy` file and corresponding signature (`.sig`) to an SD card. When the Kapp is executed for the first time, it is saved to the device's flash memory (in the same region used for custom settings), which updates the last two words of the [Tamper Detection](tamper-detection.md#tamper-check-flash-hash-tc-flash-hash-a-tamper-detection-tool) (User's Region).
+
+Available Kapps:
+
+- **Nostr Kapp**: converts a mnemonic into a Nostr `nsec` key and enables air-gapped event signing.
+- **Steganography Kapp**: lets you take BMP photos with your device and hide secrets inside them (e.g., encrypted mnemonics).
